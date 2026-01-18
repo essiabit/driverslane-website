@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Branches | DriversLane Driving Academy</title>
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="DriversLane Logo" height="40">
+      Drivers<span class="lane">Lane</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Courses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="courses.html">Theoretical Driving Course</a></li>
+            <li><a class="dropdown-item" href="courses.html">Practical Driving Course</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+            Branches
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#ecoland">Ecoland</a></li>
+            <li><a class="dropdown-item" href="#toril">Toril</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BRANCHES INTRO -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Our Branches</h2>
+  <p class="text-center">
+    DriversLane Driving Academy has two convenient branches in Davao City:
+    Ecoland and Toril. Click the branch locations on the map below to learn more.
+  </p>
+</section>
+
+<!-- IMAGE MAP -->
+<section class="container text-center my-5">
+  <img src="images/davao-map.jpg" alt="Davao City Branches" usemap="#branchesmap" class="img-fluid rounded shadow">
+
+  <map name="branchesmap">
+    <!-- Ecoland Branch -->
+    <area shape="circle" coords="150,120,30" href="#ecoland" alt="Ecoland Branch" title="Ecoland Branch">
+
+    <!-- Toril Branch -->
+    <area shape="circle" coords="400,300,30" href="#toril" alt="Toril Branch" title="Toril Branch">
+  </map>
+</section>
+
+<!-- ECOLAND BRANCH -->
+<section class="container my-5" id="ecoland">
+  <h3>Ecoland Branch</h3>
+  <img src="images/ecoland.jpg" alt="Ecoland Branch" class="img-fluid rounded shadow mb-3">
+  <p>
+    Located in the heart of Ecoland, this branch provides easy access for
+    students in the city. It is equipped with training vehicles, classrooms,
+    and certified instructors.
+  </p>
+</section>
+
+<!-- TORIL BRANCH -->
+<section class="container my-5" id="toril">
+  <h3>Toril Branch</h3>
+  <img src="images/toril.jpg" alt="Toril Branch" class="img-fluid rounded shadow mb-3">
+  <p>
+    Our Toril branch offers comprehensive driving lessons and practical
+    training for learners in the southern part of Davao City. All facilities
+    follow strict safety standards.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center p-4">
+  <p>Site Map | Home | About | Courses | Branches | Contact</p>
+  <p>Developed by: Elaiza Sia</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

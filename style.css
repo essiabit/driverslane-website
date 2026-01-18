@@ -1,0 +1,153 @@
+/* ===============================
+   DriversLane Driving Academy
+   Custom Theme CSS
+   =============================== */
+
+/* ROOT COLORS (LOGO-BASED) */
+:root {
+   --primary-blue: #1f2a5a;     /* deep royal blue */
+   --accent-orange: #f57c00;    /* safety orange */
+   --warning-red: #c62828;      /* traffic red */
+   --light-gray: #f5f5f5;
+   --white: #ffffff;
+}
+
+/* GLOBAL STYLES */
+body {
+   font-family: 'Roboto', Arial, sans-serif;
+   background-color: var(--light-gray);
+   margin: 0;
+   padding: 0;
+   color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+   background-color: var(--primary-blue);
+}
+
+.navbar-brand {
+   font-weight: bold;
+   font-size: 1.3em;
+   color: var(--white);
+}
+
+.navbar-brand .lane {
+   color: var(--accent-orange);
+}
+
+.navbar .nav-link {
+   color: var(--white);
+   margin-left: 10px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+   color: var(--accent-orange);
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+   border-radius: 10px;
+}
+
+/* HERO / CAROUSEL */
+.carousel-item img {
+   height: 80vh;
+   object-fit: cover;
+}
+
+.carousel-caption {
+   background-color: rgba(31, 42, 90, 0.7); /* rgba overlay */
+   padding: 20px;
+   border-radius: 15px;
+}
+
+.carousel-caption h1 {
+   font-size: 2.8em;
+   font-weight: bold;
+}
+
+.carousel-caption .lane {
+   color: var(--accent-orange);
+}
+
+/* SECTIONS */
+section {
+   background-color: var(--white);
+   padding: 40px;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* shadow effect */
+}
+
+/* HEADINGS */
+h2, h3 {
+   font-family: 'Montserrat', Arial, sans-serif;
+   color: var(--primary-blue);
+}
+
+/* FEATURE BOXES */
+.feature-box {
+   padding: 25px;
+   border-radius: 15px;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.feature-box:hover {
+   transform: translateY(-10px);
+   opacity: 0.95; /* opacity effect */
+}
+
+.feature-box h3 {
+   color: var(--warning-red);
+}
+
+/* BUTTONS (FOR LATER USE) */
+.btn-custom {
+   background-color: var(--accent-orange);
+   color: var(--white);
+   border-radius: 25px;
+   padding: 10px 25px;
+   border: none;
+}
+
+.btn-custom:hover {
+   background-color: var(--warning-red);
+}
+
+/* FORMS (USED IN CONTACT PAGE) */
+form input,
+form textarea,
+form select {
+   border-radius: 10px;
+   border: 1px solid #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+   border-color: var(--accent-orange);
+   box-shadow: 0 0 5px rgba(245,124,0,0.6);
+}
+
+/* IMAGE GALLERY */
+img {
+   border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+   background-color: var(--primary-blue);
+   color: var(--white);
+   margin-top: 40px;
+}
+
+footer p {
+   margin: 5px 0;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+   .carousel-caption h1 {
+      font-size: 1.8em;
+   }
+}
